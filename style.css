@@ -1,0 +1,108 @@
+/*========================================
+
+Universal Styling
+
+======================================*/
+
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+header {
+    color: whitesmoke;
+    background-color: #41b3A3;
+    border-bottom: 2px solid #85dcb8;
+    padding: 30px;
+}
+ header a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+body {
+
+    background: url(assets/moroccan-flower.png);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+
+
+
+}
+
+header>nav {
+    float: right;
+
+}
+
+nav a {
+    padding-left: 10px;
+    text-decoration: none;
+    color: whitesmoke
+}
+
+
+img {
+    float: left;
+    padding-right: 15px;
+}
+
+article {
+    float: left;
+    max-width: 590px;
+    margin-top: 5px;
+    background-color: white;
+
+
+}
+
+main::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+aside {
+    float: right;
+    display:inline-block;
+    margin-top: 5px;
+    background-color: white;
+    
+
+}
+
+aside > nav {
+    display: flex;
+    padding: 10px 20px;
+}
+
+h1,
+h2,
+h3 {
+    font-size: 15px;
+    padding: 13px;
+    border-bottom: 1px solid #41b3A3;
+    color: #41b3A3
+    
+}
+
+
+p {
+    font-size: 12px;
+    padding-top: 10px;
+    line-height: 140%;
+    margin: 10px;
+
+
+}
+
+footer {
+    text-align: left;
+
+}
