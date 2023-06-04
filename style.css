@@ -66,11 +66,13 @@ h3 {
     margin: 0 auto;
 }
 
-img {
+
+.img-picsum {
+    width: 200px;
+    height: 200px;
     float: left;
     padding-right: 15px;
 }
-
 article {
     float: left;
     max-width: 590px;
