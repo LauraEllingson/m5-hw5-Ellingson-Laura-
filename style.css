@@ -12,41 +12,59 @@ Universal Styling
     font-family: Georgia, 'Times New Roman', Times, serif
 }
 
-header {
-    color: whitesmoke;
-    background-color: #41b3A3;
-    border-bottom: 2px solid #85dcb8;
-    padding: 30px;
+
+/* Header / top navigation bar */
+
+.header-link,
+header a {
+    float: left;
+    display: flex;
+    font-size: 20px;
+    padding: 15px;
+    color: #353148;
 }
- header a {
+
+.header-link {
+    background-color: #E8AA42;
     text-decoration: none;
-    color: whitesmoke;
 }
 
-body {
-
-    background: url(assets/moroccan-flower.png);
+header {
+    background-color: #353148;
+    padding: 50px;
+    border-bottom: 1px solid #E8AA42;
 }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-
-
-
-}
-
-header>nav {
+nav {
     float: right;
-
 }
 
 nav a {
-    padding-left: 10px;
+    margin-left: 15px;
+    font-size: 17px;
     text-decoration: none;
-    color: whitesmoke
+    color: #E8AA42;
 }
 
+
+/* Body */
+
+body {
+    background: url(assets/moroccan-flower.png);
+}
+
+h1,
+h2,
+h3 {
+    font-size: 18px;
+    padding: 13px;
+    border-bottom: 1px solid #E8AA42;
+    color: #353148;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
 
 img {
     float: left;
@@ -58,51 +76,37 @@ article {
     max-width: 590px;
     margin-top: 5px;
     background-color: white;
+}
 
+p {
+    font-size: 15px;
+    padding-top: 10px;
+    line-height: 140%;
+    margin: 10px;
+}
 
+/* Sidebar */
+
+aside {
+    float: right;
+    display: block;
+    margin-top: 5px;
+    background-color: white;
+}
+
+aside>nav {
+    display: flex;
+    padding: 10px 0px;
+}
+
+/* Footer */
+
+footer {
+    text-align: left;
 }
 
 main::after {
     content: "";
     clear: both;
     display: block;
-}
-
-aside {
-    float: right;
-    display:inline-block;
-    margin-top: 5px;
-    background-color: white;
-    
-
-}
-
-aside > nav {
-    display: flex;
-    padding: 10px 20px;
-}
-
-h1,
-h2,
-h3 {
-    font-size: 15px;
-    padding: 13px;
-    border-bottom: 1px solid #41b3A3;
-    color: #41b3A3
-    
-}
-
-
-p {
-    font-size: 12px;
-    padding-top: 10px;
-    line-height: 140%;
-    margin: 10px;
-
-
-}
-
-footer {
-    text-align: left;
-
 }
